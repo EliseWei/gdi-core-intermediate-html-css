@@ -15,12 +15,12 @@
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
 		<link rel="stylesheet" href="reveal/css/reveal.css">
-		<link rel="stylesheet" href="reveal/css/theme/gdidefault.css" id="theme">
+		<link rel="stylesheet" href="reveal/css/theme/gdisunny.css" id="theme">
 
 		<!-- For syntax highlighting -->
-		<!-- light editor<link rel="stylesheet" href="lib/css/light.css">-->
-		<!-- dark editor--><link rel="stylesheet" href="reveal/lib/css/dark.css">
-		
+		<!-- light editor--><link rel="stylesheet" href="reveal/lib/css/light.css">
+		<!-- dark editor<link rel="stylesheet" href="reveal/lib/css/dark.css">-->
+
     <!-- For the slides -->
     <link rel="stylesheet" href="css/slides.css">
 		<!-- If use the PDF print sheet so students can print slides-->
@@ -121,11 +121,13 @@
         <!-- Review Roles of HTML v CSS -->
         <section>
           <h3>Review: Anatomy of a website</h3>
-          <div class = "blue"> Your Content</div>
-          <div><span class = "blue">+ HTML: </span>Structure</div>
-          <div><span class = "blue">+ CSS: </span>Presentation</div>
-          <div class = "blue">= Your Website</div>
-          <p>A website is a way to present your content to the world, using HTML and CSS to present that content &amp; make it look good.</p>
+          <div class="left-align">
+            <span class="blue"> Your Content</span><br />
+            <span class="blue">+ HTML </span>(structure)<br />
+            <span class="blue">+ CSS </span>(presentation)<br />
+            <span class="blue">= Your Website</span>
+            <p>A website is a way to present your content to the world, using HTML and CSS to present that content &amp; make it look good.</p>
+          </div>
         </section>
 
         <section>
@@ -259,7 +261,7 @@
 
         <!-- Selectors elements-->
         <section>
-			  <h3>Review: Selector: Element</h3>
+			  <h3>Review: Selecting Elements</h3>
           <pre><code class="html">p {
   property: value;
 }</code></pre>
@@ -272,7 +274,7 @@
 
         <!-- Selectors ID-->
         <section>
-			    <h3>Review: Selector: ID</h3>
+			    <h3>Review: Selecting IDs</h3>
 <pre><code class="html">#footer {
   property: value;
 }</code></pre>
@@ -283,7 +285,7 @@
 
         <!-- Selectors Class-->
         <section>
-			    <h3>Selector: Class</h3>
+			    <h3>Review: Selecting Classes</h3>
 <pre><code class="html">.warning {
   color: red;
 }</code></pre>
@@ -295,7 +297,7 @@
 
         <!-- Selector position-->
         <section>
-        <h3>Review: Selector: Position</h3>
+          <h3>Review: Selecting Relatives</h3>
 <pre><code class="html">p em {
   color: yellow;
 }</code></pre>
@@ -645,24 +647,17 @@ body{
         <section>
           <section>
             <h2>HTML5 Doctype</h2>
-            <pre><code class="xml">
-  &lt;!DOCTYPE html&gt;
-            </code></pre>
-            <p>
-              Minimum information required to ensure that a browser renders using
-              standards mode
-            </p>
+            <pre><code class="xml">&lt;!DOCTYPE html&gt;</code></pre>
+            <p>Minimum information required to ensure that a browser renders using standards mode</p>
           </section>
 
           <section>
             <h2>Old Doctypes</h2>
-            <pre><code class="xml">
-  &lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
-  "http://www.w3.org/TR/html4/strict.dtd"&gt;
+            <pre><code class="xml">&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd"&gt;
 
-  &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
-            </code></pre>
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;</code></pre>
           </section>
         </section>
 
@@ -769,10 +764,9 @@ body{
           </p>
         </section>
 
-<pre><code>
-  &lt;body&gt;
         <section>
           <h2>Not Semantic</h2>
+<pre><code> &lt;body&gt;
     &lt;div id="header"&gt;
       &lt;h1&gt;Hi, I'm a header!&lt;/h1&gt;
       &lt;div id="nav"&gt;
@@ -787,14 +781,12 @@ body{
       &lt;div class="article"&gt;bar&lt;/div&gt;
     &lt;/div&gt;
     &lt;div id="footer"&gt;Hi, I'm a footer!&lt;/div&gt;
-  &lt;/body&gt;
-</code></pre>
+  &lt;/body&gt;</code></pre>
         </section>
 
         <section>
           <h2>A lot of Divs</h2>
-<pre><code>
-&lt;body&gt;
+<pre><code>&lt;body&gt;
   &lt;div id="header"&gt;
     &lt;h1&gt;Hi, I'm a header!&lt;/h1&gt;
     &lt;div id="nav"&gt;
@@ -815,8 +807,7 @@ body{
 
         <section>
           <h2>Semantic</h2>
-          <pre><code>
-&lt;body&gt;
+          <pre><code>&lt;body&gt;
   &lt;header&gt;
     &lt;h1&gt;Hi, I'm a header!&lt;/h1&gt;
     &lt;nav&gt;
